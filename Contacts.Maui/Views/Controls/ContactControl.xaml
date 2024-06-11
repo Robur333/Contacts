@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contacts.Maui.Views.Controls.ContactControl">
+    <VerticalStackLayout Spacing="10" Margin="20,10,20,0">
+        
+
+        <Frame BackgroundColor="Transparent" Padding="10,2,10,2" BorderColor="White">
+            <HorizontalStackLayout >
+                <Label VerticalOptions="Center" WidthRequest="60" Text="Name"></Label>
+                <Entry x:Name="entryName" >
+                    <Entry.Behaviors>
+
+                    </Entry.Behaviors>
+                </Entry>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame BackgroundColor="Transparent" Padding="10,2,10,2" BorderColor="White">
+
+            <HorizontalStackLayout>
+                <Label VerticalOptions="Center" WidthRequest="60"  Text="Email"></Label>
+                <Entry x:Name="entryEmail"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Transparent" Padding="10,2,10,2" BorderColor="White">
+
+            <HorizontalStackLayout>
+                <Label VerticalOptions="Center" WidthRequest="60"  Text="Phone"></Label>
+                <Entry x:Name="entryPhone"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Transparent" Padding="10,2,10,2" BorderColor="White">
+
+            <HorizontalStackLayout>
+                <Label VerticalOptions="Center" WidthRequest="60"  Text="Address"></Label>
+                <Entry x:Name="entryAddress"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Transparent" Padding="10,2,10,2" BorderColor="White">
+
+            <HorizontalStackLayout>
+                <Label VerticalOptions="Center" WidthRequest="77"  Text="Description"></Label>
+                <Entry x:Name="entryDescription"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button x:Name="btnUpdate" Text="Save" Clicked="btnUpdate_Clicked"></Button>
+        <Button x:Name="btnCancel" Text="Cancel" Clicked="btnCancel_Clicked"></Button>
+    </VerticalStackLayout>
+
+</ContentView>
