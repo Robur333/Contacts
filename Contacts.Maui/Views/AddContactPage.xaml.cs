@@ -37,6 +37,12 @@ public partial class AddContactPage : ContentPage
             Address = contactCtrl.Address,
             Description = contactCtrl.Description,  
         });
+
+        contactCtrl.Name = string.Empty;
+        contactCtrl.Email = string.Empty;
+        contactCtrl.Phone = string.Empty;
+        contactCtrl.Address = string.Empty;
+        contactCtrl.Description = string.Empty;
         Shell.Current.GoToAsync($"..");
 
     }
